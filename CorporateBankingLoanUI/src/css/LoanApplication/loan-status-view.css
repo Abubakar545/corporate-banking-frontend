@@ -1,0 +1,57 @@
+/* loan-status-view.css */
+
+.loan-status {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.loan-status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #0044cc; /* Dark blue for the button */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.nav-button:active {
+  transform: translateY(0); /* Reset lift effect when clicked */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}

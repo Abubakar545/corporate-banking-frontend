@@ -1,0 +1,143 @@
+/* home.css */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the container takes up at least the full viewport height */
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 40px;
+  background-color: #0044cc; /* Dark blue for the header */
+  color: #fff;
+  width: 100%; /* Ensure the header spans the full width of the screen */
+  box-sizing: border-box; /* Includes padding in width calculation */
+  position: fixed; /* Fixes the header to the top of the viewport */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures the header is above other content */
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif; /* Clean and modern font */
+}
+
+.header p {
+  font-size: 18px;
+}
+
+/* Navigation Styling */
+nav {
+  position: fixed; /* Fixed position */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color:#2b2d2e; /* Bright blue for the navigation bar */
+  padding: 10px 0;
+  margin: 0; /* Ensure there's no margin */
+  z-index: 1000; /* Ensures the navigation bar is above other content */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Align items horizontally */
+  justify-content: center; /* Center items horizontally */
+}
+
+nav li {
+  margin: 0 15px; /* Space between the links */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  background-color: #2b2d2e; /* Match the nav bar background color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.nav-link:active {
+  transform: translateY(0); /* Reset lift effect when clicked */
+}
+
+/* Section Styling */
+.benefits {
+  flex: 1; /* Takes up remaining space */
+  background-color: #ffffff; /* White background for the benefits section */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* margin: 20px; Margin around the section */
+  margin-top: 80px; /* Space below the fixed header and navigation */
+  box-sizing: border-box; /* Includes padding and margin in width calculation */
+}
+
+.benefits h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #0044cc; /* Dark blue for the section title */
+}
+
+.benefit-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.benefit-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: left;
+}
+
+.benefit-item h3 {
+  font-size: 20px;
+  color: #0044cc; /* Dark blue for benefit titles */
+}
+
+.benefit-item p {
+  font-size: 16px;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .header p {
+    font-size: 16px;
+  }
+
+  .benefits h2 {
+    font-size: 24px;
+  }
+
+  .benefit-item {
+    width: 100%;
+    max-width: 400px; /* Ensures benefits section fits on smaller screens */
+  }
+
+  .nav-link {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}

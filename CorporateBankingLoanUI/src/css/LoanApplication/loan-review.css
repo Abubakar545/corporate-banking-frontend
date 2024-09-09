@@ -1,0 +1,67 @@
+/* loan-review.css */
+
+.loan-review {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.loan-review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #0044cc; /* Dark blue for the button */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.nav-button:active {
+  transform: translateY(0); /* Reset lift effect when clicked */
+}
+
+.application-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.application-item p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.application-item button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #0044cc; /* Dark blue for buttons */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.application-item button:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.application-item button:active {
+  transform: translateY(0); /* Reset lift effect when clicked */
+}

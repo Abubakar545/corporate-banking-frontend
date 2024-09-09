@@ -1,0 +1,86 @@
+/* loan-application-form.css */
+
+.loan-application-form {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.loan-application-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #0044cc; /* Dark blue for the button */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.nav-button:active {
+  transform: translateY(0); /* Reset lift effect when clicked */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #0044cc; /* Dark blue for buttons */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.submit-button:active {
+  transform: translateY(0); /* Reset lift effect when clicked */
+}
+
+.error-message, .success-message {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: #d9534f;
+  background-color: #f2dede;
+}
+
+.success-message {
+  color: #5bc0de;
+  background-color: #d9edf7;
+}
